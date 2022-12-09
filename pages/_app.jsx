@@ -3,8 +3,8 @@ import { AuthProvider, useAuth } from '@w3ui/react-keyring'
 import { UploaderProvider } from '@w3ui/react-uploader'
 import ContentPage from './ContentPage'
 import logo from './logo.png'
-import './tachyons.min.css'
-import './spinner.css'
+import '../styles/tachyons.min.css'
+import '../styles/spinner.css'
 
 function App () {
   return (
