@@ -5,6 +5,7 @@ import ContentPage from './ContentPage'
 import logo from './logo.png'
 import '../styles/tachyons.min.css'
 import '../styles/spinner.css'
+import '../styles/misc.css'
 
 function App () {
   return (
