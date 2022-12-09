@@ -13,7 +13,7 @@ function App () {
         <IdentityLoader>
           <div className='vh-100 flex flex-column justify-center items-center sans-serif light-silver'>
             <header>
-              <img src={logo} width='250' alt='logo' />
+              <img src={logo.src} width='250' alt='logo' />
             </header>
             <div className='w-90 w-50-ns mw6'>
               <ContentPage />
