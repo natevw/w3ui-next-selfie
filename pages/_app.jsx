@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { AuthProvider, useAuth } from '@w3ui/react-keyring'
 import { UploaderProvider } from '@w3ui/react-uploader'
+import Head from 'next/head'
 import ContentPage from './ContentPage'
 import logo from './logo.png'
 import '../styles/tachyons.min.css'
@@ -8,7 +9,10 @@ import '../styles/spinner.css'
 import '../styles/misc.css'
 
 function App () {
-  return (
+  return <>
+    <Head>
+      <title>W3UI File Upload Example App</title>
+    </Head>
     <AuthProvider>
       <UploaderProvider>
         <IdentityLoader>
@@ -23,7 +27,7 @@ function App () {
         </IdentityLoader>
       </UploaderProvider>
     </AuthProvider>
-  )
+  </>
 }
 
 function IdentityLoader ({ children }) {
